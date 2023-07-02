@@ -20,5 +20,5 @@ app.get("/", (req, res) => {
 app.use("/blog", blogRoutes);
 
 app.use((req, res) => {
-  //   res.render;
+  res.render("404");
 });
