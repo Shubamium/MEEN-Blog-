@@ -28,8 +28,15 @@ async function getBlogs() {
   return blogs;
 }
 
+async function getBlog(id) {
+  console.log(id);
+  const blog = await Blog.findById(id);
+  return blog;
+}
+
 module.exports = {
   connect,
   addBlog,
   getBlogs,
+  getBlog,
 };
