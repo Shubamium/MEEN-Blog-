@@ -21,6 +21,7 @@ connect(() => {
     console.log("Server Started at port 3000");
   });
 });
+
 app.use(indexRoutes);
 app.use("/blog", blogRoutes);
 
