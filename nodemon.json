@@ -1,4 +1,4 @@
 {
-  "watch": ["./app.js", "./views/**/*"],
+  "watch": ["./app.js", "views/*.ejs"],
   "exec": "node app"
 }

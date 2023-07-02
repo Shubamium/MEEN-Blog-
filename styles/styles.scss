@@ -12,8 +12,28 @@ a {
 }
 header {
   display: flex;
-  padding: 2em;
+  padding: 0.5em 2em;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.217);
+  h1 {
+    font-size: 3rem;
+    color: rgb(177, 107, 107);
+    letter-spacing: 10px;
+    span {
+      font-weight: 400;
+      position: relative;
+      letter-spacing: normal;
+      .acronym {
+        font-size: x-small;
+        opacity: 0.5;
+        font-weight: lighter;
+        position: absolute;
+        bottom: 0%;
+        left: 4px;
+      }
+    }
+  }
   nav {
     ul {
       display: flex;
