@@ -4,7 +4,7 @@ The apps should be have these features
 
 - Save Blogs to the database
 - About Page
-- Error Page
+  ~~- Error Page~~
 - View specific blogs
 - View all blogs
 - Routing - Catch All
