@@ -1,4 +1,4 @@
-const { addBlog, getBlogs, getBlog } = require("../models/db");
+const { addBlog, getBlogs, getBlog, deleteBlog } = require("../models/db");
 
 module.exports.blog_list = async (req, res) => {
   const blogs = await getBlogs();
@@ -20,5 +20,14 @@ module.exports.blog_info = async (req, res) => {
     res.render("pages/blog/detail", { blog });
   } else {
     res.redirect("../");
+  }
+};
+
+module.exports.blog_delete = async (req, res) => {
+  const blog = await deleteBlog(req.params.id);
+  if (blog) {
+    res.status(200).send({ redirect: "/" });
+  } else {
+    res.status(400).send({ redirect: "/" });
   }
 };

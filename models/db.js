@@ -34,9 +34,20 @@ async function getBlog(id) {
   return blog;
 }
 
+async function deleteBlog(id) {
+  console.log("Deleting Blog:", id);
+  try {
+    const deleted = await Blog.findByIdAndDelete(id);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 module.exports = {
   connect,
   addBlog,
   getBlogs,
   getBlog,
+  deleteBlog,
 };

@@ -4,10 +4,33 @@
   <body>
     <%- include('../../partials/nav.ejs') %>
     <main>
-      <div class="blog summary" data-blog-id="<%= blog._id %>">
+      <div class="blog summary">
         <h2><%= blog.title %></h2>
         <p><%= blog.content %></p>
+        <button id="delete-btn" data-blog-id="<%= blog._id %>">Delete</button>
       </div>
+      <script>
+        // const delBtnEL = document.querySelector("#delete-btn");
+        const delBtnEL = document.getElementById("delete-btn");
+        async function deleteBlog(id) {
+          try {
+            const req = await fetch(`/blog/${id}`, { method: "DELETE" });
+            const res = await req.json();
+            console.log(res);
+            if (res.redirect) {
+              document.location.href = res.redirect;
+            } else {
+              document.location.href = "/";
+            }
+          } catch (err) {
+            alert(err);
+          }
+        }
+        delBtnEL.addEventListener("click", () => {
+          const blogId = delBtnEL.dataset.blogId;
+          deleteBlog(blogId);
+        });
+      </script>
     </main>
     <%- include('../../partials/footer.ejs') %>
   </body>

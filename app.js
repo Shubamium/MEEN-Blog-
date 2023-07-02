@@ -17,8 +17,8 @@ const { connect } = require("./models/db");
 
 // Start the server
 connect(() => {
-  app.listen(3000, () => {
-    console.log("Server Started at port 3000");
+  app.listen(3100, () => {
+    console.log("Server Started at port 3100");
   });
 });
 

@@ -2,11 +2,12 @@
 
 The apps should be have these features
 
-- Save Blogs to the database
-- About Page
-  ~~- Error Page~~
-- View specific blogs
-- View all blogs
-- Routing - Catch All
-- Dev ( Logger Middleware, Clean Folder Structure)
+~~- Save Blogs to the database~~
+~~- About Page~~
+~~- Error Page~~
+~~- View specific blogs~~
+~~- View all blogs~~
+~~- Routing - Catch All~~
+~~- Dev ( Logger Middleware, Clean Folder Structure)~~
+
 - Clean Minimalist Design
