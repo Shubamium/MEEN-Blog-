@@ -13,7 +13,7 @@ async function connect(callback) {
   }
 }
 
-async function add(blogData) {
+async function addBlog(blogData) {
   //   const blog = new Blog({ ...blogData });
   console.log("Adding data:", blogData);
   const blog_add = new Blog({
@@ -23,7 +23,13 @@ async function add(blogData) {
   await blog_add.save();
 }
 
+async function getBlogs() {
+  const blogs = await Blog.find();
+  return blogs;
+}
+
 module.exports = {
   connect,
-  add,
+  addBlog,
+  getBlogs,
 };

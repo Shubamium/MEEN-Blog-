@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../partials/head.ejs') %>
+  <body>
+    <%- include('../../partials/nav.ejs') %>
+    <main>
+      <!-- Insert content here -->
+      <h2>All Blogs</h2>
+      <% blogs && blogs.forEach((blog)=>{ %>
+      <div class="blog summary" data-blog-id="<%= blog._id %>">
+        <h2><%= blog.title %></h2>
+        <p><%= blog.content %></p>
+      </div>
+      <% }); %>
+    </main>
+    <%- include('../../partials/footer.ejs') %>
+  </body>
+</html>
