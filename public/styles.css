@@ -88,23 +88,50 @@ main.blog_list .title_head {
   padding-top: 1em;
 }
 .blogs .blog {
+  min-width: 800px;
+}
+.blogs .blog:hover {
+  scale: 1.02;
+}
+
+.blog {
   border-left: 4px solid #ff9e9e;
   padding: 1em;
   background-color: rgba(248, 248, 248, 0.5294117647);
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.127);
 }
-.blogs .blog .blog_link {
+.blog .blog_link {
   font-weight: 400;
 }
-.blogs .blog .blog_link:hover {
+.blog .blog_link:hover {
   color: #ff9e9e;
 }
-.blogs .blog .blog_content {
+.blog .blog_content {
   opacity: 0.4;
   font-weight: 300;
 }
-.blogs .blog:hover {
-  scale: 1.02;
+
+main.blog_detail {
+  margin-top: 2em;
+  padding: 1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.2em 1em;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  background-color: #ff9e9e;
+  color: white;
+  margin: 0.2em;
+}
+.btn:hover {
+  scale: 1.2;
+}
+.btn:active {
+  scale: 0.95;
 }
 
 footer {

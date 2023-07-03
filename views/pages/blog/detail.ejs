@@ -3,11 +3,13 @@
   <%- include('../../partials/head.ejs') %>
   <body>
     <%- include('../../partials/nav.ejs') %>
-    <main>
+    <main class="blog_detail">
       <div class="blog summary">
         <h2><%= blog.title %></h2>
         <p><%= blog.content %></p>
-        <button id="delete-btn" data-blog-id="<%= blog._id %>">Delete</button>
+        <button class="btn" id="delete-btn" data-blog-id="<%= blog._id %>">
+          Delete
+        </button>
       </div>
       <script>
         // const delBtnEL = document.querySelector("#delete-btn");
