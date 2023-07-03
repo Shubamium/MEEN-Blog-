@@ -86,6 +86,8 @@ main.blog_list .title_head {
   flex-direction: column;
   gap: 1em;
   padding-top: 1em;
+  max-width: 900px;
+  padding: 2em;
 }
 .blogs .blog {
   min-width: 800px;
@@ -116,6 +118,42 @@ main.blog_detail {
   padding: 1em;
   max-width: 800px;
   margin: 0 auto;
+}
+
+main.blog_add {
+  max-width: 800px;
+  margin: 20px auto;
+  padding-top: 2em;
+}
+main.blog_add form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+main.blog_add form input,
+main.blog_add form textarea {
+  resize: none;
+  width: 100%;
+  background: rgba(234, 232, 232, 0.444);
+  border: none;
+  padding: 0.8em;
+}
+main.blog_add form input::-moz-placeholder, main.blog_add form textarea::-moz-placeholder {
+  opacity: 0.2;
+}
+main.blog_add form input::placeholder,
+main.blog_add form textarea::placeholder {
+  opacity: 0.2;
+}
+main.blog_add form textarea {
+  min-height: 300px;
+}
+main.blog_add form button {
+  margin: 0;
+  width: 100%;
+}
+main.blog_add form button:hover {
+  scale: 1.02;
 }
 
 .btn {
