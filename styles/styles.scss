@@ -18,7 +18,7 @@ header {
   border-bottom: 1px solid rgba(128, 128, 128, 0.217);
   h1 {
     font-size: 3rem;
-    color: rgb(177, 107, 107);
+    color: #ff9e9e;
     letter-spacing: 10px;
     span {
       font-weight: 400;
@@ -44,5 +44,41 @@ header {
         font-weight: 300;
       }
     }
+  }
+}
+
+.img-front {
+  max-height: 300px;
+}
+
+main {
+  min-height: 70vh;
+}
+
+main.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.2em;
+  padding-top: 4em;
+
+  .title-part {
+    margin-top: 2em;
+    h2 {
+      opacity: 0.7;
+    }
+  }
+}
+footer {
+  background-color: rgb(230, 230, 230);
+  border-top: 1px grrgb(255, 255, 255);
+  height: 100%;
+  text-align: center;
+  padding: 4em;
+  p {
+    opacity: 0.4;
+    font-size: 2rem;
+    font-weight: 200;
   }
 }
