@@ -43,6 +43,10 @@ header {
       li {
         opacity: 0.8;
         font-weight: 300;
+
+        &:hover {
+          color: $accent;
+        }
       }
     }
   }

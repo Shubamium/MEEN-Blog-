@@ -45,6 +45,9 @@ header nav ul li {
   opacity: 0.8;
   font-weight: 300;
 }
+header nav ul li:hover {
+  color: #ff9e9e;
+}
 
 .img-front {
   max-height: 300px;
