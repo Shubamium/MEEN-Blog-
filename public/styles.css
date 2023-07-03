@@ -156,6 +156,26 @@ main.blog_add form button:hover {
   scale: 1.02;
 }
 
+main.about {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4em 1em;
+}
+main.about .about-info {
+  text-align: center;
+  margin-top: 2em;
+}
+main.about .about-info h2 {
+  font-size: 2em;
+  opacity: 0.5;
+}
+main.about .about-info p {
+  opacity: 0.8;
+  font-weight: 300;
+}
+
 .btn {
   padding: 0.2em 1em;
   font-size: 1.4rem;

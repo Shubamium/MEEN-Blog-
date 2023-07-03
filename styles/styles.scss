@@ -159,6 +159,27 @@ main.blog_add {
     }
   }
 }
+
+main.about {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4em 1em;
+  & .about-info {
+    text-align: center;
+    margin-top: 2em;
+    h2 {
+      font-size: 2em;
+      opacity: 0.5;
+    }
+    p {
+      opacity: 0.8;
+      font-weight: 300;
+    }
+  }
+}
+
 .btn {
   padding: 0.2em 1em;
   font-size: 1.4rem;
