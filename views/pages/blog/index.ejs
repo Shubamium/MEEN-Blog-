@@ -3,15 +3,19 @@
   <%- include('../../partials/head.ejs') %>
   <body>
     <%- include('../../partials/nav.ejs') %>
-    <main>
+    <main class="blog_list">
       <!-- Insert content here -->
-      <h2>All Blogs</h2>
-      <% blogs && blogs.forEach((blog)=>{ %>
-      <div class="blog summary" data-blog-id="<%= blog._id %>">
-        <h2><a href="/blog/<%= blog._id %>"><%= blog.title %></a></h2>
-        <p><%= blog.content %></p>
+      <h2 class="title_head">All Blogs</h2>
+      <div class="blogs">
+        <% blogs && blogs.forEach((blog)=>{ %>
+        <div class="blog summary" data-blog-id="<%= blog._id %>">
+          <h2 class="blog_link">
+            <a href="/blog/<%= blog._id %>"><%= blog.title %></a>
+          </h2>
+          <p class="blog_content"><%= blog.content %></p>
+        </div>
+        <% }); %>
       </div>
-      <% }); %>
     </main>
     <%- include('../../partials/footer.ejs') %>
   </body>

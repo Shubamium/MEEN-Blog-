@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
+$accent: #ff9e9e;
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +19,7 @@ header {
   border-bottom: 1px solid rgba(128, 128, 128, 0.217);
   h1 {
     font-size: 3rem;
-    color: #ff9e9e;
+    color: $accent;
     letter-spacing: 10px;
     span {
       font-weight: 400;
@@ -70,6 +71,48 @@ main.index {
     }
   }
 }
+
+main.blog_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title_head {
+    font-size: 3rem;
+    font-weight: 600;
+    // letter-spacing: 0.2em;
+    opacity: 0.5;
+    margin-top: 2em;
+  }
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-top: 1em;
+  .blog {
+    border-left: 4px solid #ff9e9e;
+    padding: 1em;
+    background-color: #f8f8f887;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.127);
+
+    & .blog_link {
+      font-weight: 400;
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    & .blog_content {
+      opacity: 0.4;
+      font-weight: 300;
+    }
+    &:hover {
+      scale: 1.02;
+    }
+  }
+}
+
 footer {
   background-color: rgb(230, 230, 230);
   border-top: 1px grrgb(255, 255, 255);
