@@ -1,6 +1,6 @@
 # MEEN Blog
 
-A practice site for learning **M**ongoDB **E**xpress.js **E**js **N**ode for MVC Architecture.
+A practice site for learning **M**ongoDB **E**xpress.js **E**js **N**ode for MVC Architecture & Server-Side Rendering.
 
 ## Features
 
